@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cobed</title>
+    <style>
+
+html::-webkit-scrollbar-thumb{
+    background-color:steelblue;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(13, 65, 65);
+}
+
+html::-webkit-scrollbar-track{
+    background-color: rgb(107, 114, 114);
+}
+html::-webkit-scrollbar-track:hover{
+    background-color:grey;
+}
+html::-webkit-scrollbar{
+    width: 0.5vw;
+}
+     
+.support{
+  width: 1950px;
+    height: 1100px; 
+    padding-left: 1300px;
+}
+
+
+body{
+    margin:0px;
+}
+
+
+@keyframes rotate{
+from{ transform: rotate(-360deg); }
+to{ transform: rotate(360deg); }
+}
+
+
+
+
+
+#login{
+    margin-left:580PX;
+
+}
+.header
+{
+    width:100%;
+    height: 318px;
+   
+    padding-bottom: 40px;
+    background-image:linear-gradient(steelblue ,white )
+   
+}
+.char1{
+     width: 150px;
+    height: 300px; 
+    animation-name:none;
+    float: left;
+    padding-left: 100px;
+  
+}
+   .corona-90{
+    width: 280px;
+    height: 280px;
+  animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+}
+.corona-90:hover{
+  width: 280px;
+    height: 280px;
+    animation-duration: 2.8s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-direction:reverse;
+}
+
+
+
+td {
+  padding: 1px;
+}
+
+body {
+    margin: 0;
+}
+.containercolor2{
+    height:2400px;
+    width: 100%;
+    background-image:linear-gradient(white,steelblue);
+    
+}
+
+.text1{
+    color:rgb(44, 96, 139);
+ 
+  font-weight: bold;
+font-family:  Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 70px;
+  padding-top: 600px;
+  padding-left: 20px;
+  text-align: center;
+}
+.text1:hover{
+  color:rgb(18, 53, 82);
+}
+
+.hospital{
+    color:rgb(14, 74, 122);
+  text-align: center;
+  font-weight: bold;
+font-family:  Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 130px;
+  padding-top: 200px; 
+
+
+} 
+.hospital:hover{
+  color:rgb(5, 25, 42) ;
+  font-size: 130px;
+}
+.District{
+    font-size: 100px;
+    color:rgb(14, 74, 122);
+    padding-top:150px;
+    padding-left: 150px;
+    float:left;
+ }
+
+    .option1{
+     font-size: 70px;
+    color:rgb(14, 74, 122);
+    padding-left: 8px;
+    border-radius: 40px;
+    width: 550px;  
+   
+} 
+
+.g-p{
+      font-size: 100px;
+      color:rgb(14, 74, 122);
+     padding-left:100px;
+     padding-top:150px;
+    float:left;
+
+    }
+ .option2{
+    
+    font-size: 70px;
+    color:rgb(14, 74, 122);
+    
+    padding-left: 8px;
+    border-radius: 40px;
+    width: 550px;
+
+}  
+.Hospitallist{
+    font-size: 100px;
+    color:rgb(14, 74, 122);
+    padding-top:150px;
+    padding-left:100px;
+    float:left;
+     }
+
+  .option3{
+       font-size: 70px;
+    color:rgb(14, 74, 122);
+    padding-left: 8px;
+    border-radius: 40px;
+    width: 550px;
+     }
+/* infrastructure  */
+.infrastructure     {
+    font-size: 100px;
+    color:rgb(14, 74, 122);
+    padding-top:150px;
+    padding-left:100px;
+    float:left;
+     }
+
+  .option4{
+       font-size: 70px;
+    color:rgb(14, 74, 122);
+    padding-left: 8px;
+    border-radius: 40px;
+    width: 550px;
+    
+     }
+
+/* status button */
+
+
+.button {
+  font-weight: bold; 
+  font-size: 50px;
+  text-align: center;
+  width: 600px;
+  height: 150px;
+  float: left;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #267528;
+  border: none;
+  transition: all 0s;
+  border-radius: 50px;
+  box-shadow: 0 20px #999;
+  margin-top: -160px;
+  margin-left: 1000px;
+ 
+}
+
+.button:hover {background-color: #095c34}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(59, 58, 58);
+  transform: translateY(16px);
+  color:yellow;
+
+}
+
+/* button1 home */
+.button1 {
+  display: inline-block;
+  border-radius: 30px;
+  background-image:linear-gradient(#fa5e0a,#e3d10d);
+  border: 1px;
+  color: #FFFFFF; 
+  text-align: center;
+  font-size: 65px;
+  padding: 30px;
+  width: 350px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin-left: 700px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0s;
+}
+
+.button1 span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0s;
+}
+
+.button1:hover span {
+  padding-right: 100px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* extra addd */
+
+
+
+.button1:active {
+
+  box-shadow: 0 5px  rgb(34, 33, 33);
+  transform: translateY(30px);
+  color:black;
+
+}
+/* button 2 */
+
+.button2 {
+  display: inline-block;
+  border-radius: 30px;
+  background-image:linear-gradient( #dd2727 , #df741c);
+  border: 1px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 60px;
+  padding: 30px;
+  width: 430px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin-left:50px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0s;
+}
+
+.button2 span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0s;
+}
+
+.button2:hover span {
+  padding-right: 100px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button2:active {
+
+  box-shadow: 0 5px rgb(34, 33, 33);
+  transform: translateY(30px);
+  color:black;}
+
+/* button 3 */
+
+.button3 {
+  display: inline-block;
+  border-radius: 30px;
+  background-image:linear-gradient( #56ab2f , #a8e063);
+  border: 1px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 65px;
+  padding: 30px;
+  width: 400px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin-left:50px;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0s;
+}
+
+.button3 span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0s;
+}
+
+.button3:hover span {
+  padding-right: 100px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button3:active {
+
+box-shadow: 0 5px rgb(34, 33, 33);
+transform: translateY(30px);
+color:black;}
+
+
+/* button4 */
+
+.button4 {
+  display: inline-block;
+  border-radius: 30px;
+  background-image:linear-gradient(#7b4397, #c33e47);
+  border: 1px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 65px;
+  padding: 30px;
+  width: 300px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin-left:50px;
+}
+
+.button4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0s;
+}
+
+.button4 span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0s;
+}
+
+.button4:hover span {
+  padding-right: 100px;
+}
+
+.button4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button4:active {
+
+box-shadow: 0 5px rgb(34, 33, 33);
+transform: translateY(30px);
+color:black;}
+
+
+/* button 5  */
+.button5 {
+  display: inline-block;
+  border-radius: 30px;
+  background-image:linear-gradient( #19547b,#5c71cf);
+  border: 1px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 65px;
+  padding: 30px;
+  width: 300px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin-left:50px;
+}
+
+.button5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0s;
+}
+
+.button5 span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0s;
+}
+
+.button5:hover span {
+  padding-right: 100px;
+}
+
+.button5:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button5:active {
+
+box-shadow: 0 5px rgb(34, 33, 33);
+transform: translateY(30px);
+color:black;}
+
+
+</style>
+</head>
+<body>
+   <div class="header"> 
+       <div>
+ <table>
+     <td>
+     <img class="char1"src="pdflowerset16-aum-03-b-leaves_1-removebg-preview.png"> </img>
+    </td>
+    <td>
+    <img class="corona-90" src="corona.png">
+    </td>
+
+   
+    </script>
+
+
+    <td>
+        
+            <img class="bar" src="BED.png">
+            </td>
+       <td><button class="button1" style="vertical-align:middle"><span>Home</span></button></td>
+ <td><button class="button2" style="vertical-align:middle"><span>Ambulance</span></button></td>
+ <td><button class="button3" style="vertical-align:middle"><span>oxygen</span></button></td>
+<td><button class="button4" style="vertical-align:middle"><span>Help</span></button></td>
+<td><button class="button5" style="vertical-align:middle"><span>Info</span></button></td>
+ <td>
+     <img id="login"src="login.png" alt="account login" width="300" height="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" width="300" height="200" ></td></img>
+ <!-- mouse over login big -->
+ <script>
+    function bigImg(x) {
+      x.style.height = "220px";
+      x.style.width = "320px";
+    }
+    
+    function normalImg(x) {
+      x.style.height = "200px";
+      x.style.width = "300px";
+    }
+    </script>
+    
+ </tr>
+     
+     
+</table></div></div>
+
+<div class="containercolor2">
+    <div class="hospital">Hospital / CFLTC / CSLTC Dashboard
+
+    </div>
+      <!-- district selection -->
+     <div class="District">District
+
+     <div class="option1"><select name="District" class="option1">
+    <option value="">All</option>
+    <option value="">Kollam</option>
+    <option value="">Kannur</option>
+    <option value="">Kottayam</option>
+    <option value="">Malapuram</option>
+    <option value="">Ernakulam</option>
+    <option value="">Palakkad</option>
+    <option value="">Thrissur</option>
+    <option value="">Kozhikode</option>
+    <option value="">Wayanadu</option>
+    <option value="">Kannur</option>
+    <option value="">Kasaragod</option>
+    <option value="">Pathanamthitta</option>
+    <option value="">Thiruvananthapuram</option>
+       </select></div></div>
+ 
+    <!-- gov   private hospitals -->
+    <div class="g-p">Govt/Private
+ 
+    <div class="option2"><select name="" class="option2">
+    <option value="">Private</option>
+    <option value="">Government</option> 
+
+   </select></div>  </div>
+
+    <!-- hospitals -->
+   <div class="Hospitallist">Hospital
+
+    <div class="option3"><select name="hospitallist" class="option3">
+        <option value="">CFLTC</option>
+        <option value="">CSLTC</option>
+        <option value="">Covid Hospital</option>
+        <option value="">Non Covid Hospital</option>
+        <option value="">Domicilary care</option>
+      </select></div></div>
+
+      <!-- infrastructure -->
+      <div class="infrastructure">Infrastructure type
+
+        <div class="option4"><select name="infrastructure" class="option4">
+            <option value="">Covid</option>
+            <option value="">Non Covid</option>
+          
+          </select>    </div>
+
+          <div class="status"> 
+            <button class="button" style="vertical-align:middle" onclick="playAudio()" type="button"><span>Get  Status Of Vaccency</span>
+
+              <audio id="myAudio">
+                <source src="eee.ogg" type="audio/ogg">
+                
+                
+              </audio>
+              
+              <script>
+              var x = document.getElementById("myAudio"); 
+              
+              function playAudio() { 
+                x.play(); 
+              } 
+              
+              function pauseAudio() { 
+                x.pause(); 
+              } 
+              </script>
+              
+        </div>
+
+
+    
+    
+        </div>
+  
+           <div class="text1"> Covid-19 Jagratha Government of Kerala
+            Our health system is completely equipped with facilities to fight against Covid pandemic.<br> Check "Hospital Dashboard" available below to know about the occupancy status and availability of hospital beds and ICUs. <br>Follow the advice given by doctors and health workers to stay safe and be healthy.For any clarification on bed availability <br>please contact the Covid Control Room of your district. You can find control room number in "Helpline" seen belowg</div>
+
+
+
+      
+          
+            <!-- Image 3 -->
+<div class="content_img">
+  <img src='support.png' class="support" >
+  
+  </div>
+
+
+
+
+
+</div>
+</body>
+</html>
